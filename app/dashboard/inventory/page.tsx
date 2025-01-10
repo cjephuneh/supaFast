@@ -1,18 +1,18 @@
 "use client"
 
 import { useState } from "react"
-import { Metadata } from "next"
+// import { Metadata } from "next"
 import { InventoryManagement } from "@/components/inventory-management"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { toast } from "@/components/ui/use-toast"
+import { toast } from "@/hooks/use-toast"
 
-export const metadata: Metadata = {
-  title: "Inventory Management",
-  description: "Manage your supermarket inventory",
-}
+// export const metadata: Metadata = {
+//   title: "Inventory Management",
+//   description: "Manage your supermarket inventory",
+// }
 
 export default function InventoryPage() {
   const [file, setFile] = useState<File | null>(null)

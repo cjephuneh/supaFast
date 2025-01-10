@@ -1,17 +1,17 @@
 "use client"
 
 import { useState } from "react"
-import { Metadata } from "next"
+// import { Metadata } from "next"
 import { OrderManagement } from "@/components/order-management"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Overview } from "@/components/overview"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Badge } from "@/components/ui/badge"
 
-export const metadata: Metadata = {
-  title: "Order Management",
-  description: "Manage and track supermarket orders",
-}
+// export const metadata: Metadata = {
+//   title: "Order Management",
+//   description: "Manage and track supermarket orders",
+// }
 
 type Order = {
   id: string;

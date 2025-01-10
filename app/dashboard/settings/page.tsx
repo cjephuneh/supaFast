@@ -1,19 +1,19 @@
 "use client"
 
 import { useState } from "react"
-import { Metadata } from "next"
+// import { Metadata } from "next"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { toast } from "@/components/ui/use-toast"
+import { toast } from "@/hooks/use-toast"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 
-export const metadata: Metadata = {
-  title: "Settings",
-  description: "Manage your supermarket settings and team members",
-}
+// export const metadata: Metadata = {
+//   title: "Settings",
+//   description: "Manage your supermarket settings and team members",
+// }
 
 type TeamMember = {
   id: number;

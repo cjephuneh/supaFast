@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { Metadata } from "next"
+// import { Metadata } from "next"
 import { AnalyticsDashboard } from "@/components/analytics-dashboard"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Overview } from "@/components/overview"
@@ -10,10 +10,10 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Input } from "@/components/ui/input"
 
 
-export const metadata: Metadata = {
-  title: "Analytics",
-  description: "Advanced analytics and reporting for your supermarket",
-}
+// export const metadata: Metadata = {
+//   title: "Analytics",
+//   description: "Advanced analytics and reporting for your supermarket",
+// }
 
 export default function AnalyticsPage() {
   const [reportType, setReportType] = useState("sales")
