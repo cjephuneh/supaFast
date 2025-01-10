@@ -19,7 +19,7 @@ export default function SignUpPage() {
     // Here you would typically send this data to your backend
     console.log({ name, email, password })
     // For now, we'll just redirect to the login page
-    router.push('/login')
+    router.push('/onboarding')
   }
 
   return (

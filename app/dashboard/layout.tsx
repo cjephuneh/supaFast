@@ -14,7 +14,7 @@ export default function DashboardLayout({
       <Sidebar />
       <div className="flex-1 flex flex-col">
         <header className="h-14 border-b flex items-center justify-between px-4">
-          <h1 className="text-lg font-semibold">SuperMarket Dashboard</h1>
+          <h1 className="text-lg font-semibold">SuperFast Dashboard</h1>
           <div className="flex items-center space-x-4">
             <QuickActions />
             <Notifications />

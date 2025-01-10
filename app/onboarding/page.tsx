@@ -25,7 +25,7 @@ export default function OnboardingPage() {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <Card className="w-[450px]">
         <CardHeader>
-          <CardTitle>Welcome to SuperMarket Dashboard</CardTitle>
+          <CardTitle>Welcome to SupaFast Dashboard</CardTitle>
           <CardDescription>Please fill in your store details to get started.</CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>

@@ -28,7 +28,7 @@ export function Sidebar() {
       <div className="flex h-14 items-center border-b px-4">
         <Link href="/dashboard" className="flex items-center gap-2 font-semibold">
           <Home className="h-6 w-6" />
-          <span>SuperMarket</span>
+          <span>SupaFast</span>
         </Link>
       </div>
       <ScrollArea className="flex-1 px-3 py-2">

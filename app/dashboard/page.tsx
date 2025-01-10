@@ -15,7 +15,7 @@ import { Progress } from "@/components/ui/progress"
 
 export const metadata: Metadata = {
   title: "Dashboard",
-  description: "Main dashboard for SuperMarket management system",
+  description: "Main dashboard for SupaFast management system",
 }
 
 export default function DashboardPage() {
