@@ -24,6 +24,8 @@ type TeamMember = {
   role: 'Admin' | 'Manager' | 'Support';
 }
 
+type Role = 'Admin' | 'Manager' | 'Support';
+
 export default function SettingsPage() {
   const [storeName, setStoreName] = useState("My Supermarket")
   const [email, setEmail] = useState("admin@mysupermarket.com")
@@ -33,7 +35,11 @@ export default function SettingsPage() {
     { id: 2, name: "Jane Smith", email: "jane@example.com", role: "Manager" },
     { id: 3, name: "Bob Johnson", email: "bob@example.com", role: "Support" },
   ])
-  const [newMember, setNewMember] = useState({ name: "", email: "", role: "Support" as const })
+  const [newMember, setNewMember] = useState<{ name: string; email: string; role: Role }>({
+    name: "",
+    email: "",
+    role: "Support",
+  });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
