@@ -13,7 +13,7 @@ const initialOrders = [
 ]
 
 export function OrderManagement() {
-  const [orders, setOrders] = useState(initialOrders)
+  const [orders] = useState(initialOrders)
   const [filter, setFilter] = useState("")
 
   const filteredOrders = orders.filter(

@@ -33,8 +33,11 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   }, [])
 
   const login = async (email: string, password: string) => {
+    // Example usage of password
+    if (password.length < 6) {
+      throw new Error('Password must be at least 6 characters long');
+    }
     // Implement your login logic here
-    // For demo purposes, we'll just set a mock user
     const mockUser = { id: '1', email, name: 'Admin User' }
     setUser(mockUser)
     localStorage.setItem('user', JSON.stringify(mockUser))
